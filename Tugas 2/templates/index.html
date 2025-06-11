@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analisa Dataset</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+</head>
+<body class="container mt-4">
+    <h1 class="mb-4">Analisis Dataset Iris</h1>
+    <h3>Statistik Dasar</h3>
+    {{ summary | safe }}
+
+    <h3 class="mt-5">Visualisasi Sepal Length</h3>
+    <img src="{{ plot_url }}" class="img-fluid" />
+</body>
+</html>
